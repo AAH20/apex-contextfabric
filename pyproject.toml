@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-contextfabric"
+version = "1.0.0"
+description = "Sovereign 32x KV-Cache Transform Coding (KVTC), Hierarchical Context Memory Storage (CMX) & Cross-Agent Attention Deduplication Engine"
+readme = "README.md"
+authors = [{ name = "Ahmed Hassan", email = "aah@a2zsoc.com" }]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+keywords = [
+    "kv-cache",
+    "kvtc",
+    "context-memory",
+    "cmx",
+    "nvidia-blackwell",
+    "gb200",
+    "nemotron",
+    "deepseek-r1",
+    "openai-o3",
+    "long-context",
+    "multi-agent",
+    "zero-dependency",
+    "attention-sink",
+    "hbm-compression",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+contextfabric = "apex_contextfabric.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AAH20/apex-contextfabric"
+Repository = "https://github.com/AAH20/apex-contextfabric"
+Documentation = "https://github.com/AAH20/apex-contextfabric#readme"
+Issues = "https://github.com/AAH20/apex-contextfabric/issues"
